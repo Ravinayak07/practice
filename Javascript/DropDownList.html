@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Change the Background Color with JavaScript</title>
+</head>
+
+<body>
+    <section>
+        <select class="selectColor" onChange="changeColor(this)">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+        </select>
+    </section>
+    <script>
+        function changeColor(getColor) {
+            let selectColor = getColor.value;
+            document.body.style.background = selectColor
+        }
+    </script>
+</body>
+
+</html>

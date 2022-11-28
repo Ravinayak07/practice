@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>
+        <label>cm</label>
+        <input id="inputcm" type="number" placeholder="cm" oninput="LenCon(this.value)" onchange="LenCon(this.value)">
+    </p>
+    <p>Meters: <span id="outputMeters"></span></p>
+
+    <script>
+        function LenCon(valNum) {
+            document.getElementById("outputMeters").innerHTML = valNum / 100;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    First name:<br>
+    <input type="text" name="firstname" id='firstname'>
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" id='lastname'>
+    <br>
+    <input type="button" value="Send" onclick="myFunction()">
+    <div id="here"></div>
+    <script>
+        myFunction = function () {
+            var first = document.getElementById("firstname").value;
+            var second = document.getElementById("lastname").value;
+
+            document.getElementById("here").innerHTML = "Hello " + first + " " + second;
+        }
+    </script>
+</body>
+
+</html>
